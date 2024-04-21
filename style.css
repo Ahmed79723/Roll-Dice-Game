@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Nunito", sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to top left, #b32932, #5b2455);
+}
+#container {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(200px);
+  filter: blur();
+  width: 60%;
+  height: 80%;
+  border-radius: 1%;
+}
+.player1,
+.player2 {
+  display: flex;
+  align-items: center;
+  padding: 5% 0%;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: #bb6c84;
+  width: 50%;
+  height: 100%;
+  transition: all 0.75s;
+}
+h3 {
+  margin-bottom: 15%;
+  font-size: 40px;
+  font-weight: 300;
+}
+.active h3 {
+  font-weight: 700;
+}
+p,
+.wrapper {
+  text-align: center;
+  margin-bottom: 25%;
+}
+.score1,
+.score2 {
+  margin-bottom: 1%;
+  font-size: 80px;
+  color: #b32932;
+}
+
+.currentBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #aa3656;
+  border-radius: 5%;
+  padding: 2% 8%;
+  color: white;
+  font-size: 20px;
+  opacity: 0.8;
+}
+.active .currentBox {
+  opacity: 1;
+}
+.current1,
+.current2 {
+  font-size: 30px;
+}
+.active {
+  background-color: #cfa5b9;
+}
+.btns {
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 0px;
+  height: 100%;
+  z-index: 100;
+  padding-top: 5%;
+}
+button {
+  border: none;
+  padding: 7px 13px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: larger;
+  text-wrap: nowrap;
+  background-color: rgba(255, 255, 255, 0.584);
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.45);
+  transition: all 0.2s;
+}
+button:active {
+  transform: translateY(3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+button::first-letter {
+  display: inline-block;
+  margin-right: 0.7rem;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+#hold {
+  margin-top: 12%;
+}
+#random {
+  background-color: rgba(255, 255, 255, 0.584);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 96px;
+  height: 86px;
+  border-radius: 5%;
+  font-size: 40px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.65);
+}
+.dice {
+  width: 100%;
+}
+.winner {
+  background-color: rgba(255, 255, 255, 0.584);
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.45);
+  text-align: center;
+  margin-bottom: 3%;
+  padding: 7% 5%;
+  text-wrap: nowrap;
+  font-size: 30px;
+}
+.hidden {
+  display: none;
+}
+#arrow {
+  font-size: 30px;
+  margin-bottom: 7%;
+}
